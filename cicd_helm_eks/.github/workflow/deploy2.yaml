@@ -3,8 +3,9 @@ name: Deploy to EKS
 on:
   push:
     branches:
-      - main
-  workflow_dispatch: null    
+      - main      
+  workflow_dispatch: null 
+permissions: write-all     
 env:
   EKS_CLUSTER_NAME: cicd-cluster
   AWS_REGION: us-east-1
